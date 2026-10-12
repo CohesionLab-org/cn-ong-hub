@@ -1,0 +1,12 @@
+@import "tailwindcss";
+
+html { scroll-padding-top: 6rem; }
+button, summary, a { -webkit-tap-highlight-color: transparent; }
+button, summary { cursor: pointer; }
+a, p { overflow-wrap: anywhere; }
+:focus-visible { outline: 3px solid #ca8a04; outline-offset: 4px; }
+.skip-link { position: fixed; top: -10rem; left: 1rem; z-index: 100; background: white; color: #1e3a8a; padding: 1rem; }
+.skip-link:focus { top: 1rem; }
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { scroll-behavior: auto !important; transition: none !important; animation: none !important; }
+}
